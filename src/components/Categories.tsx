@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Category } from '../types';
 
 interface CategoryProps {
-  data: Category[];
+  data: Category;
 }
 
 export function Categories({
@@ -21,8 +21,7 @@ export function Categories({
                 <button className={`${item.name === 'Man' ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} p-2`}>
                   Open store
                 </button>
-              
-          </div>
+            </div>
           </Link>
         ))}
       </div>
