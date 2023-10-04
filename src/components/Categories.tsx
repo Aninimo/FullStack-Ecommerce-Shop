@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Category } from '../types';
 
 interface CategoryProps {
-  data: Category;
+  data: Category[];
 }
 
 export function Categories({
